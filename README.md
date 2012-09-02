@@ -5,9 +5,13 @@ Helper functions for arrays
 
 Get an item from an array
 -----
-Get the $array['user']['name'] value from the array:
+Get the $array['user']['name'] value from a multidimensional array:
 
     $name = arr::get($array, 'user.name');
+
+or get the $array['username'] value from a single dimensional array:
+
+    $name = arr::get($array, 'username');
 
 The found value is returned.
 
