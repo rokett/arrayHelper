@@ -22,5 +22,5 @@ The search is also case-insensitive.
 
 The following command will search $array for the string 'yabbadabbaboo'.  It will return true if it is found and false  if it is not.
 
-    search($array, 'yabbadabbadoo');
+    arr::search($array, 'yabbadabbadoo');
 
