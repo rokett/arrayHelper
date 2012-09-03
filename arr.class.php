@@ -11,9 +11,9 @@ class arr {
 	 *		$name = arr::get($array, 'user.name');
 	 * </code>
 	 *
-	 * @param  array   $array
-	 * @param  string  $key
-	 * @return array
+	 * @param	array	$array	Array to retrieve item from
+	 * @param	string	$key	Key to retrieve value from
+	 * @return	array			Array of retrieved values
 	 */
 	public static function get($array, $key) {
 		foreach (explode('.', $key) as $element) {
@@ -29,9 +29,9 @@ class arr {
 	 *
 	 * Differs from PHP in_array function by allowing partial strings to be matched
 	 *
-	 * @param  array   $array
-	 * @param  string  $searchTerm
-	 * @return boolean
+	 * @param	array	$array			Array to be searched
+	 * @param	string	$searchTerm		String to be searched for
+	 * @return	boolean					True if string is found, false if not
 	 */
 	public static function search($array, $searchTerm) {
 		foreach ($array as $value) {
